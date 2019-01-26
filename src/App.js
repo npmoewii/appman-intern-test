@@ -78,7 +78,7 @@ class App extends Component {
           <div className="content">
             {this.state.gallery.map(el => {
               return (
-                <div className="image-box">
+                <div className="image-box" key={el.id}>
                   <img src={el.image} className="image-image" />
                   <p className="image-label">{el.label}</p>
                 </div>
